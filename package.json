@@ -28,6 +28,7 @@
     "rimraf": "^3.0.2",
     "rxjs": "^6.5.4"
   },
+
   "devDependencies": {
     "@nestjs/cli": "^7.0.0",
     "@nestjs/schematics": "^7.0.0",
@@ -62,6 +63,13 @@
       "^.+\\.(t|j)s$": "ts-jest"
     },
     "coverageDirectory": "../coverage",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "moduleDirectories": [
+      "src",
+      "node_modules"
+    ],
+    "moduleNameMapper": {
+      "@enums/(.*)": "<rootDir>/src/emuns/index.ts/$1"
+    }
   }
 }
