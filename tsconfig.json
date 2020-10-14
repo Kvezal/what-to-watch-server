@@ -12,7 +12,10 @@
     "baseUrl": "./",
     "incremental": true,
     "paths": {
-      "enums": ["./src/enums"]
+      "common": ["./src/common"],
+      "dto": ["./src/dto"],
+      "enums": ["./src/enums"],
+      "pipes": ["./src/pipes"]
     }
   }
 }

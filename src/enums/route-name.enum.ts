@@ -1,7 +1,10 @@
 export enum ERouteName {
-  FILMS = `films`,
-  PROMO = `promo`,
-  FAVORITE = `favorite`,
   COMMENTS = `comments`,
+  FAVORITE = `favorite`,
+  FILMS = `films`,
+  GENRES = `genres`,
+  PEOPLE = `people`,
+  PROMO = `promo`,
   LOGIN = `login`,
+  REGISTRATION = `registration`,
 }
