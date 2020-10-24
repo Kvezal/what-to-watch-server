@@ -1,4 +1,4 @@
-import { IsBoolean, IsInt, IsPositive } from 'class-validator';
+import { IsBoolean } from 'class-validator';
 
 
 export class FavoriteDto {

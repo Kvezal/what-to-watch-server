@@ -78,8 +78,7 @@
     "moduleNameMapper": {
       "@common/(.*)": "<rootDir>/src/dto/index.ts/$11",
       "@dto/(.*)": "<rootDir>/src/dto/index.ts/$1",
-      "@enums/(.*)": "<rootDir>/src/emuns/index.ts/$1",
-      "@pipes/(.*)": "<rootDir>/src/pipes/index.ts/$1"
+      "@enums/(.*)": "<rootDir>/src/emuns/index.ts/$1"
     }
   }
 }

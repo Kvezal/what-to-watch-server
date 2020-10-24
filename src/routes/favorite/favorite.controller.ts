@@ -1,7 +1,6 @@
-import { Body, Controller, Param, ParseIntPipe, Put } from '@nestjs/common';
+import { Body, Controller, Param, ParseIntPipe, Put, ValidationPipe } from '@nestjs/common';
 
 import { ERouteName } from 'enums';
-import { DtoValidationPipe } from 'pipes';
 import { FavoriteDto } from 'dto';
 
 
@@ -9,7 +8,7 @@ import { FavoriteDto } from 'dto';
 export class FavoriteController {
   @Put(`:filmId`)
   change(
-    @Body(new DtoValidationPipe()) body: FavoriteDto,
+    @Body(ValidationPipe) body: FavoriteDto,
     @Param(`filmId`, ParseIntPipe) filmId: number
   ): {
     body: FavoriteDto,
